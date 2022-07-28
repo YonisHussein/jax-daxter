@@ -119,4 +119,17 @@ function generatePassword() {
     userChoice = specialCharacter;
     console.log(userChoice);
   }
+
+
+var passwordChoice = [];
+
+for (var i = 0; i < passwordConfirm; i++) {
+  var finalChoice = userChoice[Math.floor(Math.random() * userChoice.length)];
+  passwordChoice.push(finalChoice);
+  console.log(finalChoice);
+}
+
+var password = passwordChoice.join("");
+console.log('Your Password is: ' + password);
+return password;
 }
