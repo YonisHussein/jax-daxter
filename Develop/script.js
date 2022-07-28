@@ -82,4 +82,41 @@ function generatePassword() {
     userChoice = lowerCaseLetter.concat(upperCaseLetter);
     console.log(userChoice);
   }
+
+  else if (lowerCaseLetterConfirm && numberConfirm) {
+    userChoice = lowerCaseLetter.concat(number);
+    console.log(userChoice);
+  }
+  else if (lowerCaseLetterConfirm && specialCharacter) {
+    userChoice = lowerCaseLetter.concat(specialCharacter);
+    console.log(userChoice);
+  }
+  else if (upperCaseLetterConfirm && numberConfirm) {
+    userChoice = upperCaseLetter.concat(number);
+    console.log(userChoice);
+  }
+  else if (upperCaseLetterConfirm && specialCharacter) {
+    userChoice = upperCaseLetter.concat(specialCharacter);
+    console.log(userChoice);
+  }
+  else if (numberConfirm && specialCharacter) {
+    userChoice = number.concat(specialCharacter);
+    console.log(userChoice);
+  }
+  else if (lowerCaseLetterConfirm) {
+    userChoice = lowerCaseLetter;
+    console.log(userChoice);
+  }
+  else if (upperCaseLetterConfirm) {
+    userChoice = blankUpper.concat(upperCaseLetter);
+    console.log(userChoice);
+  }
+  else if (numberConfirm) {
+    userChoice = number;
+    console.log(userChoice);
+  }
+  else if (specialCharacterConfirm) {
+    userChoice = specialCharacter;
+    console.log(userChoice);
+  }
 }
