@@ -28,3 +28,26 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+function generatePassword() {
+  password = prompt("How many characters do you want your password to be? (8 to 128 characters)");
+  console.log("Password length " + password);
+
+  if(!password) {
+    password = prompt("Password isn't the length that is necessary (8 to 128 characters)");
+    console.log("Password length " + password);
+
+  } else {
+    lowerCaseLetter = confirm("Do you want lowercase letters?");
+    console.log("Lower case " + lowerCaseLetter);
+    upperCaseLetter = confirm("Do you want uppercase letters?");
+    console.log("Upper case " + upperCaseLetter);
+    number = confirm("Do you want numbers?");
+    console.log("Number " + number);
+    specialCharacter = confirm("Do you want special characters");
+    console.log("Special Character " + specialCharacter);
+  };
+
+  if(!lowerCaseLetter && !upperCaseLetter && !number && !specialCharacter) {
+    userChoice
+  }
+}
