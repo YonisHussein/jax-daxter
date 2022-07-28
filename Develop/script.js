@@ -30,12 +30,12 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  password = prompt("How many characters do you want your password to be? (8 to 128 characters)");
-  console.log("Password length " + password);
+  passwordLength = prompt("How many characters do you want your password to be? (8 to 128 characters)");
+  console.log("Password length " + passwordLength);
 
-  if(!password) {
-    password = prompt("Password isn't the length that is necessary (8 to 128 characters)");
-    console.log("Password length " + password);
+  if(!passwordLength) {
+    passwordLength = prompt("Password isn't the length that is necessary (8 to 128 characters)");
+    console.log("Password length " + passwordLength);
 
   } else {
     lowerCaseLetterConfirm = confirm("Do you want lowercase letters?");
@@ -123,7 +123,7 @@ function generatePassword() {
 
 var passwordChoice = [];
 
-for (var i = 0; i < passwordConfirm; i++) {
+for (var i = 0; i < passwordLength; i++) {
   var finalChoice = userChoice[Math.floor(Math.random() * userChoice.length)];
   passwordChoice.push(finalChoice);
   console.log(finalChoice);
